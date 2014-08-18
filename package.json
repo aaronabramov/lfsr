@@ -1,0 +1,19 @@
+{
+  "name": "lfsr",
+  "version": "0.0.0",
+  "description": "Linear feedback shift register",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dmitriiabramov/lfsr.git"
+  },
+  "author": "Dmitrii Abramov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dmitriiabramov/lfsr/issues"
+  },
+  "homepage": "https://github.com/dmitriiabramov/lfsr"
+}
