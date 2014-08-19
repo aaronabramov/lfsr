@@ -28,9 +28,9 @@ var TAPS = {
  * @param {Number} start state
  */
 function LFSR(n, seed) {
+    var mask = parseInt(Array(n + 1).join('1'), 2);
     this.n = n;
     this.taps = TAPS[n];
-    var mask = parseInt(Array(n + 1).join('1'), 2);
     // Get last n bit from the seed if it's longer
     this.register = (seed & mask);
 }

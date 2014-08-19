@@ -10,9 +10,9 @@ var n = 10,
     lfsr = new LFSR(n, initialState);
 
 // get sequence of 10 pseudo-random bits
-console.log(lfsr.seq(10)); // => 1018
+lfsr.seq(10); // => 1018
 
 // get string representing sequence of 10 pseudo-random bits
-console.log(lfsr.seqString(10)); // => '00001010100'
+lfsr.seqString(10); // => '00001010100'
 
 ```
