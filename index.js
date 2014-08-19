@@ -47,7 +47,30 @@ LFSR.prototype = {
         this.register = (this.register >> 1) | (bit << (this.n - 1));
         return bit & 1;
     },
-    maxLenSeq: function() {
+    /**
+     * @return {Number} sequence of next n shifted bits from
+     */
+    seq: function(n) {
+        var seq = 0;
+        for(var i = 0; i < n; i++) {
+            seq = (seq << 1) | this.shift();
+        }
+        return seq;
+    },
+    /**
+     * @return {String} string representing binary sequence of n bits
+     */
+    seqString: function(n) {
+        var seq = '';
+        for(var i = 0; i < n; i++) {
+            seq += this.shift();
+        }
+        return seq;
+    },
+    /**
+     * @return {Number} number of shifts before initial state repeats
+     */
+    maxSeqLen: function() {
         var initialState = this.register,
             counter = 0;
         do {
