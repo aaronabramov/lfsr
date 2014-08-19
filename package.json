@@ -1,6 +1,6 @@
 {
   "name": "lfsr",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Linear feedback shift register",
   "main": "index.js",
   "scripts": {
