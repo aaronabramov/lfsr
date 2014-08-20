@@ -25,7 +25,7 @@ context('statistical', function() {
     describe('distribution', function() {
         utils.everyLength(function(n) {
             (function(n) {
-                it('evenly distributes bits', function() {
+                it('evenly distributes bits for n = ' + n, function() {
                     var lfsr = new LFSR(),
                         occur = {'0': 0, '1': 0},
                         bit;
