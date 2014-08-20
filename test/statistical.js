@@ -8,7 +8,7 @@ context('statistical', function() {
     utils.everyLength(function(n) {
         (function(n) {
             it('max length for n = ' + n + ' is ' + (Math.pow(2, n) - 1), function() {
-                this.timeout(60000);
+                this.timeout(160000);
 
                 var lfsr = new LFSR(n),
                     count = 0,
