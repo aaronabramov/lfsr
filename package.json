@@ -4,7 +4,7 @@
   "description": "Linear feedback shift register",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "./node_modules/mocha/bin/mocha"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/dmitriiabramov/lfsr/issues"
   },
-  "homepage": "https://github.com/dmitriiabramov/lfsr"
+  "homepage": "https://github.com/dmitriiabramov/lfsr",
+  "devDependencies": {
+    "chai": "^1.9.1",
+    "mocha": "^1.21.4"
+  }
 }
