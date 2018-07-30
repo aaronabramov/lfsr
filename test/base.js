@@ -23,7 +23,7 @@ describe('lfsr', function() {
             (function(n) {
                 it('assigns default initial state for n = ' + n, function() {
                     var lfsr = new LFSR(n);
-                    expect(str(lfsr.register).length).to.equal(n);
+                    expect(str(lfsr.register).length).to.be.at.most(n);
                 });
             })(n);
         });

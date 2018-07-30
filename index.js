@@ -135,9 +135,10 @@ LFSR.prototype = {
      */
     _defaultSeed: function(n) {
         if (!n) throw new Error('n is required');
-        var lfsr = new LFSR(8, 92914);
         return lfsr.seq(n);
     }
 };
 
+ var lfsr = new LFSR(31, 92914);
+ 
 module.exports = LFSR;
